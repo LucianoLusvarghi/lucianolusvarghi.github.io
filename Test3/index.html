@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Pagina para Nyu</title>
+
+    <link rel="stylesheet" href="styles/generic.css" />
+
+
+
+
+
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <!--
+    <div style="background-color:red;">
+
+        <div id="dog_container" style="background-color:green;">
+
+            <canvas id="dog_animation"></canvas>
+            <script src="scripts/animation.js"></script>
+        </div>
+
+    </div>
+        -->
+
+        <canvas id="gameCanvas"></canvas>
+        <script src="scripts/juego.js"></script>
+
+    </div>
+
+
+    <div id="vertical-mobile">
+
+        Prueba de mobiles
+
+    </div>
+
+
+
+    <script>
+
+        var lastWidth = document.body.clientWidth;
+        var lastHeight = document.body.clientHeight;
+
+        function autoRefresh() {
+            if (document.body.clientWidth != lastWidth || document.body.clientHeight != lastHeight) {
+                lastWidth = document.body.clientWidth;
+                lastHeight = document.body.clientHeight;
+                window.location.replace(window.location.href)
+            }
+        }
+        setInterval('autoRefresh()', 200);
+    </script>
+
+</body>
+</html>
+
+<!--
+    https://www.youtube.com/watch?v=GFO_txvwK_c
+    min: 40:00
+
+
+
+    Formulario
+    https://www.youtube.com/watch?v=0X0kovjzLrw
+
+
+    TODO
+
+
+
+
+    Class
+        backGround
+        Animation
+        Colider
+        Enemy (Animation + Colider)
+        Player (Animation + Colider)
+        
+
+
+
+-->
